@@ -1,0 +1,528 @@
+@font-face {
+	font-family: 'Conv_MyriadPro-Regular';
+	src: url('fonts/MyriadPro-Regular.eot');
+	src: local('☺'), url('fonts/MyriadPro-Regular.woff') format('woff'), url('fonts/MyriadPro-Regular.ttf') format('truetype'), url('fonts/MyriadPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+}
+.wrapper {
+	width: 100%;
+	min-width: 280px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	overflow: hidden;
+}
+.block{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 20px;
+	position: relative;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 105px;
+	background: #141027;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+.logo{
+	float: left;
+}
+.menu{
+	padding: 40px 0 0 100px;
+	float: left;
+}
+.menu li{
+	display: inline-block;
+	padding: 0 15px;
+}
+.menu li a{
+	display: block;
+	font: 20px 'Conv_MyriadPro-Regular';
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+}
+.menu li a:hover{
+	color: #56d0ed;
+}
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+	padding: 100px 0 190px;
+}
+.slide_1 img{
+	width: 100%;
+}
+.slide_2{
+	/* background: #2b5877; */
+	background: url('../images/bg_2.jpg') no-repeat top center;
+	padding-bottom: 30px;
+	text-align: justify;
+	background-attachment: fixed;
+	background-size: 1940px 100%;
+	margin-top: -5px;
+}
+.slide_2_cont{
+	height: 800px;
+	overflow: hidden;
+}
+.slide_2_cont2{
+	height: auto;
+}
+.title{
+	position: relative;
+	padding: 70px 0;
+	font-size: 50px;
+	color: #fde988;
+	text-transform: uppercase;
+}
+.title_line{
+	position: absolute;
+	top: 50%;
+	width: 70%;
+	height: 1px;
+	background: #fff;
+	right: 0;
+}
+.slide_2_cont img{
+	float: left;
+	padding: 0 40px 40px 0;
+}
+.slide_2_cont p{
+	color: #fff;
+	padding-bottom: 20px;
+	font-size: 18px;
+	line-height: 27px;
+}
+.slide_2_cont p span{
+	font-weight: bold;
+	font-size: 21px;
+}
+.slide_3{
+	background: url('../images/bg_3.jpg') no-repeat top center;
+	background-size: 1940px 100%;
+	padding-bottom: 30px;
+	background-attachment: fixed;
+}
+
+
+.slide_3 .title, .slide_5 .title, .slide_7 .title{
+	text-align: right;
+}
+.slide_3 .title_line, .slide_5 .title_line, .slide_7 .title_line{
+	left: 0;
+}
+.actor_block{
+	text-align: center;
+	padding-bottom: 70px;
+}
+.actor_block li{
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px;
+}
+.actor_block li img{
+	border-radius: 50%;
+}
+.actor_block li p{
+	font-size: 16px;
+	padding-top: 20px;
+	color: #fff;
+	font-style: italic;
+}
+.arrow{
+	display: block;
+	margin: 20px auto 50px;
+	float: none;
+	padding: 0;
+	cursor: pointer;
+	-moz-transform: rotate(-90deg); /* Для Firefox */
+    -ms-transform: rotate(-90deg); /* Для IE */
+    -webkit-transform: rotate(-90deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-90deg); /* Для Opera */
+    transform: rotate(-90deg);
+}
+.title_slide_2 img{
+	margin-left: -11px;
+}
+.title_slide_6 img{
+	margin-left: -6px;
+}
+.arrow2{
+	-moz-transform: rotate(90deg); /* Для Firefox */
+    -ms-transform: rotate(90deg); /* Для IE */
+    -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(90deg); /* Для Opera */
+    transform: rotate(90deg);
+}
+.slide_4{
+	background: url('../images/bg_4.jpg') no-repeat top center;
+	background-size: 1940px 100%;
+	height: 1266px;
+/* 	background-attachment: fixed; */
+}
+}
+.slide_1_name{
+	color: #ecc9dd;
+}
+.slide_2_cont p .sostav{
+	font-weight: normal;
+	font-style: italic;
+}
+.title2 img{
+	width: 220px;
+}
+.title3 img{
+	width: 190px;
+	margin-left: -10px;
+}
+.media_title{
+	font: 30px 'Conv_MyriadPro-Regular';
+	color: #fff;
+	text-transform: uppercase;
+	overflow: hidden;
+	padding-bottom: 45px;
+}
+.media_title p{
+	padding-left: 170px;
+}
+.media_title > span{
+	display: block;
+	float: left;
+}
+.media_title p span{
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: #cbdbea;
+	border-radius: 50%;
+	margin: 6px 23px 0 0;
+}
+.flexslider{
+	border: none;
+	background: none;
+	width: 985px;
+}
+.flex-direction-nav{
+	display: none;
+}
+.flex-control-nav, .flexslider_foto .flex-control-nav{
+    bottom: auto;
+    top: -70px;
+    text-align: left;
+    padding-left: 170px;
+}
+.flex-control-paging li a, .flexslider_foto .flex-control-paging li a{
+	width: 20px;
+	height: 20px;
+	box-shadow: none;
+	background: #c9cfe5;
+}
+.flexslider_foto img{
+	width: 250px !important;
+}
+.flexslider_foto{
+	position: relative;
+	padding-bottom: 30px;
+	width: 975px;
+}
+.flexslider_foto .flex-control-paging li a.flex-active, .flexslider_foto .flex-control-paging li a:hover{
+	background: #000;
+    background: rgba(0, 0, 0, 0.9);
+}
+.mejs-play button{
+	background: url('../images/play.png') no-repeat left top;
+	width: 37px;
+	height: 37px;
+	border: none;
+	outline: none;
+}
+.mejs-pause button{
+	background: url('../images/play.png') no-repeat right top;
+	width: 37px;
+	height: 37px;
+	border: none;
+	outline: none;
+}
+:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+.mejs-offscreen{
+	display: none;
+}
+.mejs-controls .mejs-time-rail .mejs-time-total {
+    margin: 5px;
+    background: #333;
+    background: rgba(50,50,50,.8);
+    background: -webkit-gradient(linear,0 0,0 100%,from(rgba(30,30,30,.8)),to(rgba(60,60,60,.8)));
+    background: -webkit-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));
+    background: -moz-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));
+    background: -o-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));
+    background: -ms-linear-gradient(top,rgba(30,30,30,.8),rgba(60,60,60,.8));
+    background: linear-gradient(rgba(30,30,30,.8),rgba(60,60,60,.8));
+}
+.audio_block{
+	overflow: hidden;
+	width: 450px;
+	float: left;
+	height: 140px;
+	padding-left: 0px;
+}
+.audio_block > span{
+	font: 27px 'Conv_MyriadPro-Regular';
+	color: #fff;
+	font-style: italic;
+}
+.slide_5{
+	background: url('../images/bg_5.jpg') no-repeat top center;
+	background-size: 1940px 100%;
+	background-attachment: fixed;
+}
+.developments{
+	text-align: center;
+	padding: 100px 0 250px 0;
+}
+.developments li{
+	display: inline-block;
+	width: 370px;
+	padding: 15px;
+}
+.developments li img{
+	width: 370px;
+	height: 260px;
+}
+.slide_6{
+	background: #2b5877 url('../images/bg_6.jpg') no-repeat top center;
+	overflow: hidden;
+	background-attachment: fixed;
+}
+.reviews_block_oll{
+	height: 735px;
+	overflow: hidden;
+}
+.reviews_block_oll2{
+	height: auto;
+}
+.reviews_block{
+	overflow: hidden;
+	padding-bottom: 45px;
+    text-align: justify;
+}
+.reviews_block img{
+	width: 155px;
+	float: left;
+	margin-right: 30px;
+}
+.reviews_block p{
+	font-family: 'Times New Roman';
+	font-size: 27px;
+	color: #fff;
+	font-style: italic;
+	line-height: 30px;
+	padding-bottom: 20px;
+	padding-left: 185px;
+}
+.reviews_block span{
+	font-family: 'Verdana';
+	display: block;
+	width: 480px;
+	float: right;
+	font-size: 24px;
+	color: #fff;
+	line-height: 30px;
+}
+.slide_7{
+	background: url('../images/bg_2.jpg') no-repeat top center;
+	background-size: 1940px 100%;
+	padding-bottom: 250px;
+	position: relative;
+}
+.kontakt_block{
+	overflow: hidden;
+}
+.kontakt_info{
+	width: 300px;
+	float: left;
+	padding-left: 50px;
+	padding-top: 40px;
+}
+.kontakt_info p{
+	font: 18px 'Conv_MyriadPro-Regular';
+	color: #fff;
+	font-weight: bold;
+}
+.kontakt_info span{
+	display: block;
+	padding-bottom: 30px;
+	font: 18px 'Conv_MyriadPro-Regular';
+	color: #fff;
+	font-style: italic;
+}
+.kontakt_form{
+	width: 470px;
+	float: right;
+}
+.kontakt_form p{
+	font: 30px 'Conv_MyriadPro-Regular';
+	color: #fff;
+	padding-bottom: 15px;
+}
+.kontakt_form span{
+	display: block;
+	font: 15px 'Conv_MyriadPro-Regular';
+	color: #fff;
+}
+.kontakt_form input{
+	background: #fff;
+	border: 7px solid #0f353e;
+	margin: 5px 0 10px 0;
+	width: 440px;
+	padding: 3 20px;
+}
+.kontakt_form textarea{
+	background: #fff;
+	border: 7px solid #0f353e;
+	margin: 5px 0 10px 0;
+	width: 440px;
+	padding: 3 20px;
+	resize: none;
+	height: 90px;
+}
+.kontakt_form input[type="submit"]{
+	background: #0f353e;
+	font: 13px 'Conv_MyriadPro-Regular';
+	color: #fff;
+	width: 200px;
+}
+.mix{
+	position: absolute;
+	left: 0;
+	bottom: -400px;
+	z-index: 2;
+}
+.img_bg{
+	position: absolute;
+	right: -200px;
+	bottom: -600px;
+}
+.inline, .inline iframe{
+	width: 800px;
+	height: 400px;
+}
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	margin: -190px auto 0;
+	min-width: 280px;
+	height: 190px;
+	background: #0e0f19;
+	position: relative;
+}
+.footer .block{
+	text-align: center;
+	padding-top: 65px;
+}
+
+.footer  span a{
+   	color: #17354D;
+	text-decoration:none;
+}
+
+.footer .block p{
+	font: 18px 'Conv_MyriadPro-Regular';
+	color: #fff;
+	padding-bottom: 30px;
+}
+.developments_popup{
+	max-width: 1000px;
+	margin-right:10px;
+}
+.developments_popup img{
+	width: 70%;
+	margin-right: 20px;
+	float: left;
+}
+.developments_popup p{
+	font: 14px 'Conv_MyriadPro-Regular';
+	color: #fff;
+	text-align: justify;
+	overflow: hidden;
+}
+
+
+.developments_popup span{
+	display: block;
+	padding-bottom: 20px;
+	font: 14px 'Conv_MyriadPro-Regular';
+	color: #fff;
+}
+
+
+.fancybox-skin {
+background: #062238;
+}
+
+
